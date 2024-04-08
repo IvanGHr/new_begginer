@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+        <!-- Semantic -->
+        <header> <nav></nav> </header>
+        <main>
+            <article></article>
+            <article></article>
+        </main>
+        <div class="sidebar">
+            <aside>not main content</aside>
+            <aside>not main content</aside>
+        </div>
+        <footer></footer>
+
+		<div class="content">
+			<h1>main</h1>
+			<h2>second</h2>
+			<h3>third</h3>
+			<p>Hello world!</p>
+			<br />
+			Git mi
+		</div>
+		<ul>
+			<li>First</li>
+			<li>Second</li>
+			<li>
+				La-lala
+				<ol>
+					<li>First</li>
+					<li>Second</li>
+					<li>
+						La-lala Lorem ipsum, dolor<sup><a href="https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BB%D0%BB%D0%B0%D1%80_%D0%A1%D0%A8%D0%90" target="_blank">1</a></sup> sit amet consectetur adipisicing elit. Illum libero totam maiores odio, quidem in adipisci dolorum unde, <span class="blue">placeat quisquam dolores sint</span> aut architecto veritatis ea dignissimos hic porro! Laboriosam.
+					</li>
+				</ol>
+			</li>
+		</ul>
+        <hr>
+		<ol>
+			<li>First</li>
+			<li>Second</li>
+			<!-- <li>La-lala</li> -->
+		</ol>
+		<!-- comment -->
+		<div class="links-imgs"></div>
+		<a href="https://www.youtube.com/" target="_blank">youtube</a>
+		<img src="123.avif" alt="CAT" />
+
+        <form action="https://www.youtube.com/results" method="get">
+            <input type="text" placeholder="what you want" name="search_query">
+            <button type="submit">Find</button>
+        </form>
+
+        <form action="/file">
+            <label for="ok">do you chose</label>
+            <input type="checkbox" name="ok" id="ok" required>
+            <div>
+                <label for="oll">do you </label>
+                <input type="radio" name="ol" id="oll" value="top" required>
+                <label for="ol">do you </label>
+                <input type="radio" name="ol" id="ol" value="down" required>
+            </div>
+            <select name="topic" id="topic">
+                <option value="first">first</option>
+                <option value="second" selected>second</option>
+                <optgroup label="popular">
+                    <option value="first">first</option>
+                    <option value="second" selected>second</option>
+                </optgroup>
+            </select>
+            <input type="range" name="volume" min="0" max="12" step="3">
+            <div>
+                <textarea name="text" id="textarea" cols="30" rows="10" placeholder="enter" minlength="20"></textarea>
+            </div>
+            <button type="submit"> btn</button>
+        </form>
+
+        <div class="form">
+            <div class="container">
+                <h1 class="title">Contact me</h1>
+                <form action="/test">
+                    <div class="form-content">
+                        <div class="email-box box">
+                            <input class="input" type="email" placeholder="E-mail*">
+                        </div>
+                        <div class="telegram-box box">
+                            <input class="input" type="email" placeholder="Telegram">
+                        </div>
+                        <div class="topic-box box">
+                            <select class="input" name="topic">
+                                <option value="first">first</option>
+                                <option value="second">second</option>
+                            </select>
+                        </div>
+                        <textarea class="comment-box box" name="comment-box" id="comment" placeholder="Comment"></textarea>
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+	</body>
 </html>
