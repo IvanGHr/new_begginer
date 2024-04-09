@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>HTML</title>
+        <link rel="stylesheet" href="./node_modules/reset-css/reset.css">
+        <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -87,19 +89,28 @@
                 <form action="/test">
                     <div class="form-content">
                         <div class="email-box box">
-                            <input class="input" type="email" placeholder="E-mail*">
+                            <img src="./icons/envelope-regular.svg" alt="email">
+                            <label for="email">E-mail*</label>
+                            <input id="email" class="input" type="email">
                         </div>
                         <div class="telegram-box box">
-                            <input class="input" type="email" placeholder="Telegram">
+                            <img src="./icons/telegram .svg" alt="telegram">
+                            <label for="telegram">Telegram</label>
+                            <input id="telegram" class="input" type="email" >
                         </div>
                         <div class="topic-box box">
-                            <select class="input" name="topic">
+                            <img src="./icons/comment-dots-regular.svg" alt="comment">
+                            <label for="topic">Topic*</label>
+                            <select id="topic" class="input" name="topic">
                                 <option value="first">first</option>
                                 <option value="second">second</option>
                             </select>
                         </div>
-                        <textarea class="comment-box box" name="comment-box" id="comment" placeholder="Comment"></textarea>
-                        <button type="submit">Send</button>
+                        <div class="comment-box box">
+                            <label for="comment">Comment</label>
+                            <textarea class="input" name="comment-box" id="comment"></textarea>
+                        </div>
+                        <button class="btn" type="submit">Send</button>
                     </div>
                 </form>
             </div>

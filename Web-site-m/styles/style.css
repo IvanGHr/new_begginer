@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 0 40px;
+    color: rgb(5, 0, 56);
+    font-family: 'Roboto';
+}
+
+.nav-menu__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 33px 0 33px 10px;
+    margin-bottom: 60px;
+}
+
+.nav-menu__link {
+    font-size: 16px;
+    margin-right: 34px;
+    font-weight: 500;
+}
+
+.nav-menu__link a {
+    text-decoration: none;
+    color: rgb(5, 0, 56);
+}
+
+.place .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.place__content {
+    max-width: 440px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.place__title {
+    margin-bottom: 18px;
+    max-width: 285px;
+}
+
+.main-text {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 450px;
+    line-height: 24px;
+}
+
+.place__text {
+    margin-bottom: 55px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.form__email {
+    border: 1px solid rgb(155, 153, 175);
+    border-radius: 32px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+.main-button {
+    border: 1px solid rgb(66, 98, 255);
+    border-radius: 32px;
+    background: rgb(66, 98, 255);
+    height: 48px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+.form__text {
+    font-size: 14px;
+    color: rgb(5, 0, 56);
+    margin-bottom: 47px;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.sponsors__text {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.sponsors__icon-boxes {
+    display: flex;
+}
+
+.sponsors__icon-box {
+    margin-right: 30px;
+}
+
+.sponsors__icon-box:last-child {
+    margin-right: 0;
+}

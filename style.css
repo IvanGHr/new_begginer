@@ -1,0 +1,19 @@
+img {
+    width: 25px;
+    color: #FAFAFA;
+}
+
+.form {
+    background-color: #1E1F29;
+    color: azure;
+}
+
+.box, .input{
+    background-color: #2E2D3D;
+    color: #FAFAFA;
+}
+
+.btn {
+    background-color: #6C38CC;
+    color: #FAFAFA;
+}
