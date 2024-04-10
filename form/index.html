@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="../node_modules/reset-css/reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form-box">
+        <div class="container">
+            <h1 class="form-box__title title">
+                Contact with me
+            </h1>
+            <form action="./#" class="form-box__form form">
+                <div class="form__email-box box">
+                    <img class="form__icon-email icon" src="./icons/message.svg" alt="latter">
+                    <label class="form__label-email label" for="email">E-mail*</label>
+                    <input type="email" class="email input" id="email">
+                </div>
+                <div class="form__telegram-box box">
+                    <img class="form__icon-telegram icon" src="./icons/telegram.svg" alt="fly">
+                    <label class="form__label-tegram label" for="telegram">Telegram</label>
+                    <input type="email" class="telegram input" id="telegram">
+                </div>
+                <div class="form__select-box box">
+                    <img class="form__icon-topic icon" src="./icons/topic.svg" alt="topic">
+                    <label class="form__label-topic label" for="topic">Topic*</label>
+                    <select name="topic" id="topic" class="topic input">
+                        <option value="first">First</option>
+                        <option value="second">Second</option>
+                        <option value="third">Third</option>
+                    </select>
+                </div>
+                <div class="form__comment-box box">
+                    <label class="form__label-comment" for="comment">Comment</label>
+                    <textarea name="comment" id="comment" class="comment"></textarea>
+                </div>
+                <button class="form__btn btn">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

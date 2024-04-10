@@ -15,6 +15,8 @@
     padding: 0 40px;
     color: rgb(5, 0, 56);
     font-family: 'Roboto';
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .nav-menu__menu {
@@ -40,6 +42,10 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+}
+
+.place {
+    min-height: 700px;
 }
 
 .place__content {
@@ -78,6 +84,14 @@
     border-radius: 32px;
     height: 48px;
     margin-bottom: 10px;
+    padding-left: 16px;
+    &:focus {
+        outline: none;
+    }
+}
+
+.form__email:focus {
+    
 }
 
 .main-button {
@@ -90,6 +104,7 @@
     font-weight: 400;
     text-align: center;
     color: white;
+    cursor: pointer;
 }
 
 .form__text {
@@ -122,4 +137,28 @@
 
 .sponsors__icon-box:last-child {
     margin-right: 0;
+}
+
+.list {
+    & .list__advantages {
+        margin-bottom: 32px;
+        & .list__adv {
+            max-width: 242px;
+            position: relative;
+            padding-left: 34px;
+            font-family: 'Roboto';
+            font-size: 18px;
+            line-height: 24px;
+            color: rgba(5, 0, 56, 0.6);
+            &:not(:last-child) {
+                margin-bottom: 18px;
+            }
+            &::before {
+                content: url(../icons/ok.svg);
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    }
 }
