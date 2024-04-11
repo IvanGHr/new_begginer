@@ -6,7 +6,8 @@
     url('../fonts/Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -19,12 +20,17 @@
     margin: 0 auto;
 }
 
+.header {
+    border-bottom: 0.5px solid rgb(240, 240, 240);
+    margin-bottom: 60px;
+}
+
 .nav-menu__menu {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     padding: 33px 0 33px 10px;
-    margin-bottom: 60px;
+    
 }
 
 .nav-menu__link {
@@ -90,10 +96,6 @@
     }
 }
 
-.form__email:focus {
-    
-}
-
 .main-button {
     border: 1px solid rgb(66, 98, 255);
     border-radius: 32px;
@@ -129,6 +131,7 @@
 
 .sponsors__icon-boxes {
     display: flex;
+    flex-direction: row;
 }
 
 .sponsors__icon-box {

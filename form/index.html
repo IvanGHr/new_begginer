@@ -18,17 +18,18 @@
                 <div class="form__email-box box">
                     <img class="form__icon-email icon" src="./icons/message.svg" alt="latter">
                     <label class="form__label-email label" for="email">E-mail*</label>
-                    <input type="email" class="email input" id="email">
+                    <input type="email" class="email input" id="email" placeholder="Enter your email">
                 </div>
                 <div class="form__telegram-box box">
                     <img class="form__icon-telegram icon" src="./icons/telegram.svg" alt="fly">
                     <label class="form__label-tegram label" for="telegram">Telegram</label>
-                    <input type="email" class="telegram input" id="telegram">
+                    <input type="email" class="telegram input" id="telegram" placeholder="Enter your telegram">
                 </div>
                 <div class="form__select-box box">
                     <img class="form__icon-topic icon" src="./icons/topic.svg" alt="topic">
                     <label class="form__label-topic label" for="topic">Topic*</label>
                     <select name="topic" id="topic" class="topic input">
+                        <option value="" selected>Chose your topic</option>
                         <option value="first">First</option>
                         <option value="second">Second</option>
                         <option value="third">Third</option>
@@ -36,7 +37,7 @@
                 </div>
                 <div class="form__comment-box box">
                     <label class="form__label-comment" for="comment">Comment</label>
-                    <textarea name="comment" id="comment" class="comment"></textarea>
+                    <textarea name="comment" id="comment" class="comment" rows="5"></textarea>
                 </div>
                 <button class="form__btn btn">Send</button>
             </form>
