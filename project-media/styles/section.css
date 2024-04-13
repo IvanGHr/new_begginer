@@ -1,0 +1,41 @@
+.hello {
+    min-height: 360px;
+    background-color: var(--color-dark-grey);
+}
+
+.hello .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hello__main-title {
+    font-family: 'Fira Sans';
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 100%;
+    color: var(--color-white);
+    margin-bottom: 32px;
+    & span {
+        background-image: linear-gradient(90deg, rgb(215, 123, 230), rgb(190, 99, 230), rgb(108, 56, 204));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.hello__button-box {
+    display: flex;
+    gap: 32px;
+}
+
+.hello__about {
+    position: relative;
+}
+
+.hello__button-video {
+    position: absolute;
+    bottom: 74px;
+    left: 74px;
+}
+

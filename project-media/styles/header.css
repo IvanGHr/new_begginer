@@ -1,0 +1,71 @@
+.header {
+    background-color: var(--color-dark-grey);
+    min-height: 200px;
+    padding-top: 40px; 
+}
+
+.header__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    & .label__icon {
+        margin-right: 20px;
+    }
+    & .label__text {
+        color: var(--color-white);
+        font-family: 'Montserrat Alternates';
+        font-size: 24px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
+
+.nav-menu {
+    & .nav-menu__list {
+        display: flex;
+        gap: 24px;
+        list-style: none;
+    }
+    & .nav-menu__name {
+        padding: 8px 16px;
+    }
+    & .nav-menu__name a {
+        font-family: 'Fira Sans';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 120%;
+        color: var(--color-white);
+        text-decoration: none;
+        &:hover {
+            color: var(--color-grey);
+        }
+    }
+    & .nav-menu__name_active {
+        border: var(--border);
+        border-radius: 8px;
+    }
+}
+
+.header__log-in {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    & .header__log-in-text a {
+        color: var(--color-white);
+        font-family: 'Fira Sans';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 120%;
+        text-decoration: none;
+        &:hover {
+            color: var(--color-grey);
+        }
+    }
+}
