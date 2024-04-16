@@ -43,6 +43,7 @@
         line-height: 120%;
         color: var(--color-white);
         text-decoration: none;
+        text-align: center;
         &:hover {
             color: var(--color-grey);
         }
@@ -50,6 +51,26 @@
     & .nav-menu__name_active {
         border: var(--border);
         border-radius: 8px;
+    }
+}
+
+.nav-menu_catalog {
+    & .nav-menu__name {
+        border: var(--border);
+        border-radius: 10px;
+        &:hover {
+            background-color: var(--color-dark-grey);
+        }
+    &.nav-menu__name a {
+        color: var(--color-white);
+    }
+    }
+    & .nav-menu__name_active {
+        border: none;
+        background-color: var(--color-violet);
+        &:hover {
+            background-color: var(--color-violet); 
+        }
     }
 }
 

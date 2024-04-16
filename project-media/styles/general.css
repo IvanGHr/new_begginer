@@ -11,6 +11,8 @@
     --color-black: rgb(22, 23, 29);
     --color-violet: rgb(108, 56, 204);
     --color-violet-dark: rgb(46, 45, 61);
+    --color-pink : rgb(228, 122, 213);
+    --color-gradient: linear-gradient(90deg, rgb(215, 123, 230), rgb(190, 99, 230), rgb(108, 56, 204));
     --border: 1px solid rgb(77, 80, 100);
 }
 
