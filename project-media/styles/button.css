@@ -11,7 +11,7 @@
     cursor: pointer;
 }
 
-.button_focus {
+.button_border {
     border: var(--border);
     padding: 15px 31px;
     background: none;
@@ -23,4 +23,8 @@
     display: flex;
     gap: 8px;
     line-height: 24px;
+}
+
+.button_focus {
+    background: var(--color-violet-dark); 
 }

@@ -11,18 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/general.css">
     <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/button.css">
     <link rel="stylesheet" href="./styles/section.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/button.css">
     <title>Document</title>
 </head>
 <body>
     <header class="header">
         <div class="header__content container">
-            <div class="header__label label">
+            <a href="#" class="header__label label">
                 <img src="./icons/logo.svg" alt="logo" class="label__icon">
-                <a href="#" class="label__text">PurpleSchool</a>
-            </div>
+                <p class="label__text">PurpleSchool</p>
+            </a>
             <nav class="header__nav-menu nav-menu">
                 <ul class="header__nav-list nav-menu__list">
                     <li class="header__nav-name nav-menu__name nav-menu__name_active"><a href="#">Курсы</a></li>
@@ -31,10 +31,10 @@
                     <li class="header__nav-name nav-menu__name"><a href="#">База знаний</a></li>
                 </ul>
             </nav>
-            <div class="header__log-in">
+            <a href="#" class="header__log-in">
                 <img src="./icons/user.svg" alt="user" class="header__log-in-icon"></img>
-                <div class="header__log-in-text"> <a href="#">Вход</a></div>
-            </div>
+                <p>Вход</p>
+            </a>
         </div>
     </header>
     <main class="main">
@@ -46,16 +46,16 @@
                 </h1>
                 <div class="hello__button-box">
                     <button class="hello__btn button">Выбрать курс</button>
-                    <button class="hello__btn button button_focus">О школе</button>
+                    <button class="hello__btn button button_border">О школе</button>
                 </div>
             </div>
                 <div class="hello__about">
-                <img src="./images/start-video.png" alt="Hello" class="hello__welcome-video">
-                <button class="hello__button-video button button_video">
-                    <img src="./icons/play.svg" alt="play">
-                    О школе
-                </button>
-            </div>
+                    <img src="./images/video.png" alt="Hello" class="hello__welcome-video">
+                    <button class="hello__button-video button button_video">
+                        <img src="./icons/play.svg" alt="play">
+                        О школе
+                    </button>
+                </div>
             </div>
         </section>
         <section class="catalog">
@@ -254,6 +254,140 @@
                 </div>
             </div>
         </section>
+        <section class="materials">
+            <div class="container">
+                <div class="materials__text main-text">Блог и социальные сети</div>
+                <h2 class="materials__title main-title">Полезные материалы</h2>
+                <p class="materials__descr main-descr">Каждую неделю мы публикуем новости, обновления, а так же дополнительные полезные материалы в социальных сетях:</p>
+                <div class="materials__contacts contacts">
+                    <div class="material__link contacts__link">
+                        <a href="#">
+                            <img src="./icons/youtube.svg" alt="youtube">
+                        </a>
+                    </div>
+                    <div class="material__link contacts__link">
+                        <a href="#">
+                            <img src="./icons/telegram.svg" alt="telegram">
+                        </a>
+                    </div>
+                    <div class="material__link contacts__link">
+                        <a href="#">
+                            <img src="./icons/vk.svg" alt="vk">
+                        </a>
+                    </div>
+                </div>
+                <div class="materials__comments">
+                    <div class="materials__comment-box comment-box">
+                        <div class="comment-box__statistic">
+                            <div class="comment-box__date stat">
+                                <img src="./icons/calendar.svg" alt="date">
+                                <p>06 мая 2023</p>
+                            </div>
+                            <div class="comment-box__views stat">
+                                <img src="./icons/eye.svg" alt="eye">
+                                <p>2 555 просмотра</p>
+                            </div>
+                        </div>
+                        <h4 class="comment-box__title">
+                            Критика в работе – ваш друг, но не всегда
+                        </h4>
+                        <p class="comment-box__text">
+                            Когда делаешь код ревью иногда встречаешь с тем, что даешь конструктивную критику и она воспринимается в штыки, словно это личное оскорбление. Человек всеми силами пытается сопротивляться обратной связи и не готов слушать аргументы. Тут варианта два: или обратная связь дана некорректно, или человек не воспринимает критику. В этом посте я хочу сосредоточиться на том, как работать с критикой.
+                        </p>
+                        <div class="comment-box__button button button_border">Читать</div>
+                    </div>
+                    <div class="materials__comment-box comment-box">
+                        <div class="comment-box__statistic">
+                            <div class="comment-box__date stat">
+                                <img src="./icons/calendar.svg" alt="date">
+                                <p>06 мая 2023</p>
+                            </div>
+                            <div class="comment-box__views stat">
+                                <img src="./icons/eye.svg" alt="eye">
+                                <p>2 555 просмотра</p>
+                            </div>
+                        </div>
+                        <h4 class="comment-box__title">
+                            Критика в работе – ваш друг, но не всегда
+                        </h4>
+                        <p class="comment-box__text">
+                            Когда делаешь код ревью иногда встречаешь с тем, что даешь конструктивную критику и она воспринимается в штыки, словно это личное оскорбление. Человек всеми силами пытается сопротивляться обратной связи и не готов слушать аргументы. Тут варианта два: или обратная связь дана некорректно, или человек не воспринимает критику. В этом посте я хочу сосредоточиться на том, как работать с критикой.
+                        </p>
+                        <div class="comment-box__button button button_border button_focus">Читать</div>
+                    </div>
+                    <div class="materials__comment-box comment-box">
+                        <div class="comment-box__statistic">
+                            <div class="comment-box__date stat">
+                                <img src="./icons/calendar.svg" alt="date">
+                                <p>06 мая 2023</p>
+                            </div>
+                            <div class="comment-box__views stat">
+                                <img src="./icons/eye.svg" alt="eye">
+                                <p>2 555 просмотра</p>
+                            </div>
+                        </div>
+                        <h4 class="comment-box__title">
+                            Критика в работе – ваш друг, но не всегда
+                        </h4>
+                        <p class="comment-box__text">
+                            Когда делаешь код ревью иногда встречаешь с тем, что даешь конструктивную критику и она воспринимается в штыки, словно это личное оскорбление. Человек всеми силами пытается сопротивляться обратной связи и не готов слушать аргументы. Тут варианта два: или обратная связь дана некорректно, или человек не воспринимает критику. В этом посте я хочу сосредоточиться на том, как работать с критикой.
+                        </p>
+                        <div class="comment-box__button button button_border">Читать</div>
+                    </div>
+                </div>
+                <div class="materials__button button button_border">Все публикации</div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__label-box">
+                <a href="#" class="footer__label label">
+                    <img src="./icons/logo.svg" alt="logo" class="label__icon">
+                    <p class="label__text">PurpleSchool</p>
+                </a>
+                <div class="footer__contacts contacts">
+                    <div class="contacts__link">
+                        <a href="#">
+                            <img src="./icons/youtube.svg" alt="youtube">
+                        </a>
+                    </div>
+                    <div class="contacts__link">
+                        <a href="#">
+                            <img src="./icons/telegram.svg" alt="telegram">
+                        </a>
+                    </div>
+                    <div class="contacts__link">
+                        <a href="#">
+                            <img src="./icons/vk.svg" alt="vk">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <nav class="footer__nav-menu">
+                <ol class="footer__menu footer-nav">
+                    <li class="footer-nav__title">Меню</li>
+                    <li><a class="footer-nav__link" href="#">Курсы</a></li>
+                    <li><a class="footer-nav__link" href="#">О школе</a></li>
+                    <li><a class="footer-nav__link" href="#">Блог</a></li>
+                    <li><a class="footer-nav__link" href="#">База знаний</a></li>
+                </ol>
+                <ol class="footer__menu footer-nav">
+                    <li class="footer-nav__title">Документы</li>
+                    <li><a class="footer-nav__link" href="#">Договор Оферта</a></li>
+                    <li><a class="footer-nav__link" href="#">Политика конфиденциальности</a></li>
+                </ol>
+                <ol class="footer__menu footer-nav">
+                    <li class="footer-nav__title">Документы</li>
+                    <li class="footer-nav__text">ИП Грязнов Иван Андреевич</li>
+                    <li class="footer-nav__text">ИНН 999999999999</li>
+                    <li><a class="footer-nav__link" href="#">ivanhriaznov@gmail.com</a></li>
+                </ol>
+            </nav>
+            <div class="footer__rules">
+                PurpleSchool © 2020 - 2023 Все права защищены
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
