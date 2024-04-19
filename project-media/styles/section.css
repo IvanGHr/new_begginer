@@ -1,9 +1,10 @@
 .hello {
     min-height: 360px;
     background-color: var(--color-dark-grey);
+    padding: 100px 0;
 }
 
-.hello .container {
+.hello__content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,10 +35,12 @@
     position: relative;
     box-shadow: 0px 4px 30px 15px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+    background: none;
 }
 
 .hello__welcome-video {
     display: block;
+    width: 100%;
 }
 
 .hello__button-video {
@@ -49,7 +52,7 @@
 .main-text {
     color: var(--color-pink);
     font-family: 'Fira Sans';
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 120%;
     margin-bottom: 8px;
@@ -94,8 +97,9 @@
 }
 
 .course-card {
-    & img {
+    & .course-card__img {
         display: block;
+        width: 100%;
     }
     & .course-card__descr {
         padding: 24px;
@@ -172,19 +176,6 @@
             font-weight: 700;
             line-height: 120%;
         }
-        & .course-card__btn {
-            padding: 16px 32px;
-            color: var(--color-white);
-            font-family: 'Fira Sans';
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 120%;
-            text-align: center;
-            border-radius: 10px;
-            background-color: var(--color-violet);
-            border: none;
-            cursor: pointer;
-        }
     }
 }
 
@@ -204,7 +195,9 @@
 
 .about__statistic {
     display: flex;
+    flex-wrap: wrap;
     gap: 70px;
+    margin-bottom: 70px;
 }
 
 .about__responce {
@@ -216,7 +209,6 @@
     background-color: var(--color-violet-dark);
     border-radius: 10px;
     flex: 1;
-    margin-bottom: 70px;
     & p {
         color: var(--color-white);
         font-family: 'Fira Sans';
@@ -283,7 +275,7 @@
 
 .materials {
     background-color: var(--color-black);
-    padding: 100px;
+    padding: 100px 0;
     min-height: 1430px;
 }
 
@@ -366,48 +358,3 @@
     }
 }
 
-.footer {
-    background: rgb(16, 17, 20);
-    min-height: 480px;
-    padding: 62px;
-}
-
-.footer__label-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 49px;
-}
-
-.footer__nav-menu {
-    display: flex;
-    gap: 80px;
-    margin-bottom: 48px;
-}
-
-.footer__rules {
-    color: var(--color-grey);
-    font-family: 'Fira Sans';
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.footer-nav {
-    font-family: 'Fira Sans';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 120%;
-    & :not(:last-child) {
-        margin-bottom: 16px;
-    }
-    & .footer-nav__title {
-        color: var(--color-pink);
-    }
-    & .footer-nav__link {
-        color: var(--color-white);
-        text-decoration: none;
-    }
-    & .footer-nav__text {
-        color: var(--color-grey);
-    }
-}

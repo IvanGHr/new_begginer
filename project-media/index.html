@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./styles/button.css">
     <link rel="stylesheet" href="./styles/section.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/media.css">
     <title>Document</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
         <div class="header__content container">
             <a href="#" class="header__label label">
                 <img src="./icons/logo.svg" alt="logo" class="label__icon">
-                <p class="label__text">PurpleSchool</p>
+                <p class="label__text">PurpleSchool</p> 
             </a>
             <nav class="header__nav-menu nav-menu">
                 <ul class="header__nav-list nav-menu__list">
@@ -35,17 +36,20 @@
                 <img src="./icons/user.svg" alt="user" class="header__log-in-icon"></img>
                 <p>Вход</p>
             </a>
+            <button class="header__menu">
+                <img src="./icons/menu.png" alt="menu">
+            </button>
         </div>
     </header>
     <main class="main">
         <section class="hello">
-            <div class="container">
+            <div class="hello__content container">
                 <div class="hello__chose">
                 <h1 class="hello__main-title">Доступные курсы по <br /> 
                 <span>Разработке и DevOps</span>
                 </h1>
                 <div class="hello__button-box">
-                    <button class="hello__btn button">Выбрать курс</button>
+                    <button class="hello__btn button button_violet">Выбрать курс</button>
                     <button class="hello__btn button button_border">О школе</button>
                 </div>
             </div>
@@ -73,7 +77,7 @@
                 </nav>
                 <div class="catalog__card-box">
                     <div class="card-box__course-card course-card">
-                        <img src="./images/cover.png" alt="Next&React">
+                        <img src="./images/cover.png" alt="Next&React" class="course-card__img">
                         <div class="course-card__descr">
                             <h3 class="course-card__title">React + Next.js - с нуля</h3>
                             <p class="course-card__text">Иван Андреевич</p>
@@ -91,11 +95,10 @@
                         </div>
                         <div class="course-card__price-box">
                             <div class="course-card__price">от 2000 грн</div>
-                            <button class="course-card__btn">Подробнее</button>
+                            <button class="course-card__btn button button_violet">Подробнее</button>
                         </div>
-                    </div>
-                    <div class="card-box__course-card course-card">
-                        <img src="./images/cover.png" alt="Next&React">
+                    </div><div class="card-box__course-card course-card">
+                        <img src="./images/cover.png" alt="Next&React" class="course-card__img">
                         <div class="course-card__descr">
                             <h3 class="course-card__title">React + Next.js - с нуля</h3>
                             <p class="course-card__text">Иван Андреевич</p>
@@ -113,11 +116,10 @@
                         </div>
                         <div class="course-card__price-box">
                             <div class="course-card__price">от 2000 грн</div>
-                            <button class="course-card__btn">Подробнее</button>
+                            <button class="course-card__btn button button_violet">Подробнее</button>
                         </div>
-                    </div>
-                    <div class="card-box__course-card course-card">
-                        <img src="./images/cover.png" alt="Next&React">
+                    </div><div class="card-box__course-card course-card">
+                        <img src="./images/cover.png" alt="Next&React" class="course-card__img">
                         <div class="course-card__descr">
                             <h3 class="course-card__title">React + Next.js - с нуля</h3>
                             <p class="course-card__text">Иван Андреевич</p>
@@ -135,11 +137,10 @@
                         </div>
                         <div class="course-card__price-box">
                             <div class="course-card__price">от 2000 грн</div>
-                            <button class="course-card__btn">Подробнее</button>
+                            <button class="course-card__btn button button_violet">Подробнее</button>
                         </div>
-                    </div>
-                    <div class="card-box__course-card course-card">
-                        <img src="./images/cover.png" alt="Next&React">
+                    </div><div class="card-box__course-card course-card">
+                        <img src="./images/cover.png" alt="Next&React" class="course-card__img">
                         <div class="course-card__descr">
                             <h3 class="course-card__title">React + Next.js - с нуля</h3>
                             <p class="course-card__text">Иван Андреевич</p>
@@ -157,11 +158,10 @@
                         </div>
                         <div class="course-card__price-box">
                             <div class="course-card__price">от 2000 грн</div>
-                            <button class="course-card__btn">Подробнее</button>
+                            <button class="course-card__btn button button_violet">Подробнее</button>
                         </div>
-                    </div>
-                    <div class="card-box__course-card course-card">
-                        <img src="./images/cover.png" alt="Next&React">
+                    </div><div class="card-box__course-card course-card">
+                        <img src="./images/cover.png" alt="Next&React" class="course-card__img">
                         <div class="course-card__descr">
                             <h3 class="course-card__title">React + Next.js - с нуля</h3>
                             <p class="course-card__text">Иван Андреевич</p>
@@ -179,7 +179,7 @@
                         </div>
                         <div class="course-card__price-box">
                             <div class="course-card__price">от 2000 грн</div>
-                            <button class="course-card__btn">Подробнее</button>
+                            <button class="course-card__btn button button_violet">Подробнее</button>
                         </div>
                     </div>
                 </div>
@@ -313,7 +313,7 @@
                         <p class="comment-box__text">
                             Когда делаешь код ревью иногда встречаешь с тем, что даешь конструктивную критику и она воспринимается в штыки, словно это личное оскорбление. Человек всеми силами пытается сопротивляться обратной связи и не готов слушать аргументы. Тут варианта два: или обратная связь дана некорректно, или человек не воспринимает критику. В этом посте я хочу сосредоточиться на том, как работать с критикой.
                         </p>
-                        <div class="comment-box__button button button_border button_focus">Читать</div>
+                        <div class="comment-box__button button button_border">Читать</div>
                     </div>
                     <div class="materials__comment-box comment-box">
                         <div class="comment-box__statistic">

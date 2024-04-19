@@ -1,7 +1,7 @@
 .button {
     padding: 16px 32px;
-    background: var(--color-violet);
     border-radius: 10px;
+    background: none;
     border: none;
     font-family: 'Fira Sans';
     font-size: 18px;
@@ -11,10 +11,19 @@
     cursor: pointer;
 }
 
+.button_violet {
+    background: var(--color-violet);
+    &:hover {
+        background: rgb(94, 49, 179); 
+    }
+}
+
 .button_border {
     border: var(--border);
     padding: 15px 31px;
-    background: none;
+    &:hover {
+        background: var(--color-violet-dark); 
+    }
 }
 
 .button_video {
@@ -25,6 +34,6 @@
     line-height: 24px;
 }
 
-.button_focus {
-    background: var(--color-violet-dark); 
+@media (max-width: 360px) {
+    
 }
