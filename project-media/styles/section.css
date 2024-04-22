@@ -87,13 +87,45 @@
 }
 
 .catalog__nav-menu {
+    display: flex;
+    gap: 24px;
     margin-bottom: 32px;
+    overflow: scroll;
+    scrollbar-width: none;
+    margin: 0 -24px 32px -24px;
+    padding-left: 24px;
+    white-space: nowrap; /*no wrap space words*/
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    & .catalog__nav-button {
+        color: var(--color-white);
+        font-family: 'Fira Sans';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 120%;
+        background: none;
+        border: var(--border);
+        border-radius: 10px;
+        padding: 8px 16px;
+        cursor: pointer;
+        &:hover {
+            background-color: var(--color-dark-grey);
+        }
+    }
+    & .catalog__nav-button_active {
+        background-color: var(--color-violet);
+        border: none;
+        &:hover {
+            background: rgb(78, 40, 149);
+        }
+    }
 }
 
 .catalog__card-box {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
     gap: 70px;
-    flex-wrap: wrap;
 }
 
 .course-card {
@@ -194,9 +226,9 @@
 }
 
 .about__statistic {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+    gap: 16px 70px;
     margin-bottom: 70px;
 }
 
@@ -208,7 +240,6 @@
     padding: 48px;
     background-color: var(--color-violet-dark);
     border-radius: 10px;
-    flex: 1;
     & p {
         color: var(--color-white);
         font-family: 'Fira Sans';
@@ -230,14 +261,13 @@
 }
 
 .about__platform {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
     gap: 32px 70px;
 }
 
 .about__raiting {
-    width: 100%;
+    grid-column: 1 / -1;
     color: var(--color-white);
     font-family: 'Fira Sans';
     font-size: 36px;
@@ -246,14 +276,12 @@
 }
 
 .topic {
-    flex: 1;
     display: flex;
     align-items: center;
     gap: 24px;
     background-color: var(--color-violet-dark);
     border-radius: 10px;
     padding: 24px 32px;
-    max-width: 360px;
     & .topic__grade {
         color: var(--color-white);
         font-family: 'Fira Sans';
