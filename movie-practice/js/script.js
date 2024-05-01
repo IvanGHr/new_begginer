@@ -1,21 +1,40 @@
 'use strict'
 
-let numberOfFilms = prompt('how many films did you watch?', '');
+let numberOfFilms = +prompt('how many films did you watch?', '');
 
 const personalMovieDB = {
     count : numberOfFilms,
     movies : {},
     actors : {},
     genres : [],
-    privat : false
+    private : false
 };
 
-const a = prompt('The latest movie what you saw?', ''),
-      b = prompt('What a grade of it', ''),
-      c = prompt('The latest movie what you saw?', ''),
-      d = prompt('What a grade of it', '');
+for (let i = 0; i < 2; i++) {
+    const a = prompt('The latest movie what you saw?', ''),
+		  b = prompt('What a grade of it', '')
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+    if (
+			a != '' &&
+			b != '' &&
+			a != null &&
+			b != null &&
+			a.length < 50
+		) {
+			personalMovieDB.movies[a] = b
+		} else {
+			i--;
+		}
+};
+
+if (personalMovieDB.count < 10) {
+    alert('To little movies');
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30) {
+    alert('You are classic viewer');
+} else if (personalMovieDB.count > 30) {
+    alert('You are cinephile')
+} else {
+    alert('Error')
+};
 
 console.log(personalMovieDB);
